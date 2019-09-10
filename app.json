@@ -1,3 +1,5 @@
+var mongo = require('mongoDB');
+
 {
   "name": "Reddit Asylum Bot",
   "description": "Basic Groupme Bot written in Node",
