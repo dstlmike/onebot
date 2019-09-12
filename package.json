@@ -11,6 +11,7 @@
     "cjs-module": "^1.5.0",
     "constantinople": "^3.1.2",
     "core-util-is": "^1.0.2",
+    "cron": "^1.7.2",
     "express": "^4.17.1",
     "icinga2-api": "^1.1.2",
     "jade": "^1.11.0",
@@ -20,9 +21,14 @@
     "mongoose": "^5.7.0",
     "node": "^12.10.0",
     "node-gyp": "^5.0.3",
+    "peer": "^0.2.10",
     "pug": "^2.0.4",
+    "ref-loader": "^1.0.3",
     "transformers": "^3.1.0",
-    "webpack-dev-server": "^3.8.0"
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.3",
+    "webpack-dev-server": "^3.8.0",
+    "y": "^0.3.2"
   },
   "engines": {
     "node": ">= 0.6.0",
@@ -36,5 +42,9 @@
     "node",
     "groupme"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "ts-loader": "^6.0.4"
+  }
 }
