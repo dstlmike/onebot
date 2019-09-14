@@ -1,5 +1,5 @@
 #!/bin/env node
-var http, bot, router, server, port, db;
+var http, director, bot, router, server, port, db;
 
 http        = require('http');
 director    = require('director');
@@ -35,8 +35,8 @@ server = http.createServer(function (req, res) {
   });
 });
 
-port = Number(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3002);
-ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+port = Number(process.env.NODEJS_SERVICE_PORT || process.env.PORT || 3002);
+ip = process.env.NODEJS_SERVICE_IP || "0.0.0.0";
 
 server.listen(port, ip);
 
